@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Fancy-login-1</title>
+        <style>
+            body{font-family: Verdana, Geneva, Tahoma, sans-serif;
+                background: white url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg")no-repeat scroll top left;
+                background-position: center;
+            }
+            .form-div{
+                border: 2px solid black;
+                width: 250px;
+                text-align: center;
+                margin: 150px auto;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 15px #00aeef;
+            }
+            .form-div img{
+                width: 100px;
+                margin-top: -50px;
+            }
+            .form-div h2{
+                color: cadetblue;
+                margin-top: 10px;
+            }
+            input[type="text"], input[type="password"]{
+                text-align: center;
+                font-size: 18px;
+                height: 35px;
+                background: transparent;
+                color: blueviolet;
+                border: 3px solid teal;
+                width: 150px;
+                outline: none;
+                border-radius: 10px;
+                margin: 5px;
+                ::placeholder{color: lightgray;}
+            }
+            input[type="text"]:focus, input[type="password"]:focus{
+                border:3px solid #00aeef;
+            }
+            input[type="submit"]{
+                background-color: teal;
+                color: white;
+                border: none;
+                font-size: 18px;
+                margin: 15px;
+                padding: 12px 35px;
+                border-radius: 50px;
+            }
+            input[type="submit"]:hover{
+                background-color: #00aeef;
+                box-shadow: 0 0 15px white;
+            }
+        </style>
+    </head>
+<body>
+    <div class="form-div"><img src="https://cdn-icons-png.flaticon.com/512/219/219983.png">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="username"><br>
+            <input type="password" placeholder="password"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+    </html>
